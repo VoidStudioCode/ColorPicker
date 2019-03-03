@@ -1,0 +1,28 @@
+﻿<Window x:Class="ColorPickerDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800" AllowDrop="True" PreviewDragOver="Window_PreviewDragOver" PreviewDrop="Window_PreviewDrop">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Name="Img" Height="300" Width="300" Grid.Column="0" Grid.Row="0"/>
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Name="Rec"  Fill="LightGray" Stroke="Black" Height="50" Width="300" Grid.Row="0"/>
+            <TextBlock Name="Tb_Time" Text="ms" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,8,0,0" Grid.Row="1"/>
+        </Grid>
+        <Button Content="Open" HorizontalAlignment="Right" Margin="0,24,24,24" Width="75" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
+    </Grid>
+</Window>
