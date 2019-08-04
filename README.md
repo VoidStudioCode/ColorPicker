@@ -15,4 +15,4 @@ Color color = colorPicker.GetMediaColor(imagePath);
 ```
 
 ### License:
-This project is release under the Apache 2.0 license for non-commercial usage. For commercial usage, please contact us for another license.
+This project is released under the Apache 2.0 License for non-commercial use. For commercial use, please contact us for another license.
